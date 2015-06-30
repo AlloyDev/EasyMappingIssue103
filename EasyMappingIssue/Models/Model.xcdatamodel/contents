@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RDNCluster" representedClassName="RDNCluster" syncable="YES">
+        <attribute name="clusterId" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="childClusters" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="RDNCluster" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RDNCluster" positionX="-1260" positionY="-459" width="128" height="88"/>
+    </elements>
+</model>

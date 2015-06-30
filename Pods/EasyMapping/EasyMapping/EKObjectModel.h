@@ -1,0 +1,56 @@
+//
+//  EKObjectModel.h
+//  EasyMappingExample
+//
+//  Created by Denys Telezhkin on 22.06.14.
+//  Copyright (c) 2014 EasyKit. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "EKMappingProtocol.h"
+
+
+#if __has_feature(nullability) // Xcode 6.3+
+#pragma clang assume_nonnull begin
+#else
+#define nullable
+#define __nullable
+#endif
+
+/**
+ EKModel is convenience base class, that allows transforming JSON objects to NSObjects and vice versa.
+*/
+@interface EKObjectModel : NSObject <EKMappingProtocol>
+
+/**
+ Create object using provided JSON dictionary. This method uses EKObjectMapping object, provided by objectMapping method of EKMappingProtocol.
+ 
+ @param properties parsed JSON NSDictionary.
+ 
+ @return mapped object
+ */
++ (instancetype)objectWithProperties:(NSDictionary *)properties;
+
+
+/**
+ Create object using provided JSON dictionary. This method uses EKObjectMapping object, provided by objectMapping method of EKMappingProtocol.
+ 
+ @param properties parsed JSON NSDictionary.
+ 
+ @return mapped object
+ */
+- (instancetype)initWithProperties:(NSDictionary *)properties;
+
+/**
+ Serialize mapped object back to JSON representation. 
+ 
+ @return NSDictionary representation of current object.
+ */
+- (NSDictionary *)serializedObject;
+
+@end
+
+#if __has_feature(nullability)
+#pragma clang assume_nonnull end
+#endif
+

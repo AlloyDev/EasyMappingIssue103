@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#import "RDNServerResponseMapper.h"
+
+#import "RDNCluster+RDNMapping.h"
+
 @interface ViewController ()
 
 @end
@@ -16,7 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"badJson" ofType:@""];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    
+    RDNServerResponseMapper *clusterResponseMapper = [[RDNServerResponseMapper alloc] init];
+    NSArray *clusters = [clusterResponseMapper mapServerResponse:responseDict];
+    NSLog(@"%@", clusters);
 }
 
 - (void)didReceiveMemoryWarning {

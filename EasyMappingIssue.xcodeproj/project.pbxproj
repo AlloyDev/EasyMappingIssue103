@@ -14,6 +14,17 @@
 		FD6D8CAA1B432E2B001F2C69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6D8CA91B432E2B001F2C69 /* Images.xcassets */; };
 		FD6D8CAD1B432E2B001F2C69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD6D8CAB1B432E2B001F2C69 /* LaunchScreen.xib */; };
 		FD6D8CB91B432E2B001F2C69 /* EasyMappingIssueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CB81B432E2B001F2C69 /* EasyMappingIssueTests.m */; };
+		FD6D8CC51B433093001F2C69 /* RDNServerResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */; };
+		FD6D8CC61B433093001F2C69 /* RDNServerResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */; };
+		FD6D8CC81B433249001F2C69 /* badJson in Resources */ = {isa = PBXBuildFile; fileRef = FD6D8CC71B433249001F2C69 /* badJson */; };
+		FD6D8CC91B433249001F2C69 /* badJson in Resources */ = {isa = PBXBuildFile; fileRef = FD6D8CC71B433249001F2C69 /* badJson */; };
+		FD6D8CCB1B4335BE001F2C69 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */; };
+		FD6D8CCC1B4335BE001F2C69 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */; };
+		FD6D8CCF1B43367B001F2C69 /* RDNCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */; };
+		FD6D8CD01B43367B001F2C69 /* RDNCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */; };
+		FD6D8CD31B4336C9001F2C69 /* RDNCluster+RDNMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */; };
+		FD6D8CD41B4336C9001F2C69 /* RDNCluster+RDNMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */; };
+		FE9C66D78FF449485A799E29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E606C12023DA2542031D08BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7A98DB4DEE78618435FDB27 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E606C12023DA2542031D08BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BE61444BB67DB769D7C5B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD6D8C991B432E2B001F2C69 /* EasyMappingIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMappingIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6D8C9D1B432E2B001F2C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6D8C9E1B432E2B001F2C69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +54,14 @@
 		FD6D8CB21B432E2B001F2C69 /* EasyMappingIssueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMappingIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6D8CB71B432E2B001F2C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6D8CB81B432E2B001F2C69 /* EasyMappingIssueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyMappingIssueTests.m; sourceTree = "<group>"; };
+		FD6D8CC31B433093001F2C69 /* RDNServerResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNServerResponseMapper.h; sourceTree = "<group>"; };
+		FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDNServerResponseMapper.m; sourceTree = "<group>"; };
+		FD6D8CC71B433249001F2C69 /* badJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = badJson; sourceTree = "<group>"; };
+		FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FD6D8CCD1B43367B001F2C69 /* RDNCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNCluster.h; sourceTree = "<group>"; };
+		FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDNCluster.m; sourceTree = "<group>"; };
+		FD6D8CD11B4336C9001F2C69 /* RDNCluster+RDNMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDNCluster+RDNMapping.h"; sourceTree = "<group>"; };
+		FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDNCluster+RDNMapping.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9C66D78FF449485A799E29 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		426F94FB8627C1E07E2BE8B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE61444BB67DB769D7C5B0 /* Pods.debug.xcconfig */,
+				A7A98DB4DEE78618435FDB27 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		924522071806C90BD28DC405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E606C12023DA2542031D08BB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD6D8C901B432E2B001F2C69 = {
 			isa = PBXGroup;
 			children = (
 				FD6D8C9B1B432E2B001F2C69 /* EasyMappingIssue */,
 				FD6D8CB51B432E2B001F2C69 /* EasyMappingIssueTests */,
 				FD6D8C9A1B432E2B001F2C69 /* Products */,
+				426F94FB8627C1E07E2BE8B8 /* Pods */,
+				924522071806C90BD28DC405 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +123,17 @@
 		FD6D8C9B1B432E2B001F2C69 /* EasyMappingIssue */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D8CC21B432E95001F2C69 /* Models */,
 				FD6D8CA01B432E2B001F2C69 /* AppDelegate.h */,
 				FD6D8CA11B432E2B001F2C69 /* AppDelegate.m */,
 				FD6D8CA31B432E2B001F2C69 /* ViewController.h */,
 				FD6D8CA41B432E2B001F2C69 /* ViewController.m */,
+				FD6D8CC31B433093001F2C69 /* RDNServerResponseMapper.h */,
+				FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */,
 				FD6D8CA61B432E2B001F2C69 /* Main.storyboard */,
 				FD6D8CA91B432E2B001F2C69 /* Images.xcassets */,
 				FD6D8CAB1B432E2B001F2C69 /* LaunchScreen.xib */,
+				FD6D8CC71B433249001F2C69 /* badJson */,
 				FD6D8C9C1B432E2B001F2C69 /* Supporting Files */,
 			);
 			path = EasyMappingIssue;
@@ -119,6 +165,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FD6D8CC21B432E95001F2C69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */,
+				FD6D8CCD1B43367B001F2C69 /* RDNCluster.h */,
+				FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */,
+				FD6D8CD11B4336C9001F2C69 /* RDNCluster+RDNMapping.h */,
+				FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD6D8CBC1B432E2B001F2C69 /* Build configuration list for PBXNativeTarget "EasyMappingIssue" */;
 			buildPhases = (
+				B50DC682FAA04025F307AA7E /* Check Pods Manifest.lock */,
 				FD6D8C951B432E2B001F2C69 /* Sources */,
 				FD6D8C961B432E2B001F2C69 /* Frameworks */,
 				FD6D8C971B432E2B001F2C69 /* Resources */,
+				ACDD703C75841E5D87DBEF25 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6D8CC81B433249001F2C69 /* badJson in Resources */,
 				FD6D8CA81B432E2B001F2C69 /* Main.storyboard in Resources */,
 				FD6D8CAD1B432E2B001F2C69 /* LaunchScreen.xib in Resources */,
 				FD6D8CAA1B432E2B001F2C69 /* Images.xcassets in Resources */,
@@ -209,17 +270,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6D8CC91B433249001F2C69 /* badJson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACDD703C75841E5D87DBEF25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50DC682FAA04025F307AA7E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD6D8C951B432E2B001F2C69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6D8CC51B433093001F2C69 /* RDNServerResponseMapper.m in Sources */,
+				FD6D8CCF1B43367B001F2C69 /* RDNCluster.m in Sources */,
+				FD6D8CCB1B4335BE001F2C69 /* Model.xcdatamodel in Sources */,
 				FD6D8CA51B432E2B001F2C69 /* ViewController.m in Sources */,
+				FD6D8CD31B4336C9001F2C69 /* RDNCluster+RDNMapping.m in Sources */,
 				FD6D8CA21B432E2B001F2C69 /* AppDelegate.m in Sources */,
 				FD6D8C9F1B432E2B001F2C69 /* main.m in Sources */,
 			);
@@ -229,6 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6D8CCC1B4335BE001F2C69 /* Model.xcdatamodel in Sources */,
+				FD6D8CD01B43367B001F2C69 /* RDNCluster.m in Sources */,
+				FD6D8CC61B433093001F2C69 /* RDNServerResponseMapper.m in Sources */,
+				FD6D8CD41B4336C9001F2C69 /* RDNCluster+RDNMapping.m in Sources */,
 				FD6D8CB91B432E2B001F2C69 /* EasyMappingIssueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +448,7 @@
 		};
 		FD6D8CBD1B432E2B001F2C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BE61444BB67DB769D7C5B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EasyMappingIssue/Info.plist;
@@ -355,6 +459,7 @@
 		};
 		FD6D8CBE1B432E2B001F2C69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A98DB4DEE78618435FDB27 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EasyMappingIssue/Info.plist;
@@ -365,6 +470,7 @@
 		};
 		FD6D8CC01B432E2B001F2C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BE61444BB67DB769D7C5B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +522,7 @@
 				FD6D8CBE1B432E2B001F2C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD6D8CBF1B432E2B001F2C69 /* Build configuration list for PBXNativeTarget "EasyMappingIssueTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +531,7 @@
 				FD6D8CC11B432E2B001F2C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
