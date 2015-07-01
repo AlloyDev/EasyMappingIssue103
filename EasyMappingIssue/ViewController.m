@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <MagicalRecord/MagicalRecord.h>
+
 #import "RDNServerResponseMapper.h"
 
 #import "RDNCluster+RDNMapping.h"
@@ -27,6 +29,16 @@
     
     RDNServerResponseMapper *clusterResponseMapper = [[RDNServerResponseMapper alloc] init];
     NSArray *clusters = [clusterResponseMapper mapServerResponse:responseDict];
+    NSLog(@"%@", clusters);
+    
+    NSManagedObjectContext *rootSavingContext = [NSManagedObjectContext MR_rootSavingContext];
+    
+    NSPredicate *clusterIdToFavourPredicate = [NSPredicate predicateWithFormat:@"clusterId == 30637176"];
+    [RDNCluster MR_deleteAllMatchingPredicate:clusterIdToFavourPredicate];
+    
+    [rootSavingContext MR_saveToPersistentStoreAndWait];
+    
+    clusters = [RDNCluster MR_findAll];
     NSLog(@"%@", clusters);
 }
 

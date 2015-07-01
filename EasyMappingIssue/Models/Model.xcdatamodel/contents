@@ -3,9 +3,10 @@
     <entity name="RDNCluster" representedClassName="RDNCluster" syncable="YES">
         <attribute name="clusterId" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="childClusters" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="RDNCluster" syncable="YES"/>
+        <relationship name="childClusters" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="RDNCluster" inverseName="parentClusters" inverseEntity="RDNCluster" syncable="YES"/>
+        <relationship name="parentClusters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RDNCluster" inverseName="childClusters" inverseEntity="RDNCluster" syncable="YES"/>
     </entity>
     <elements>
-        <element name="RDNCluster" positionX="-1260" positionY="-459" width="128" height="88"/>
+        <element name="RDNCluster" positionX="-1260" positionY="-459" width="128" height="105"/>
     </elements>
 </model>

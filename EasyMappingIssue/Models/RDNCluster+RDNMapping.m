@@ -18,7 +18,23 @@
                                                @"id" : @"clusterId"
                                                }];
         
-        [mapping hasMany:[RDNCluster class] forKeyPath:@"related" forProperty:@"childClusters"];
+        [mapping mapKeyPath:@"related" toProperty:@"childClusters" withValueBlock:^id(NSString *key, NSArray * relatedArray, NSManagedObjectContext *context) {
+            EKManagedObjectMapping *clusterMapping = [RDNCluster relatedObjectMapping];
+            NSArray *clusters = [EKManagedObjectMapper arrayOfObjectsFromExternalRepresentation:relatedArray
+                                                                       withMapping:clusterMapping
+                                                            inManagedObjectContext:context];
+            return [NSOrderedSet orderedSetWithArray:clusters];
+        }];
+    }];
+}
+
++ (EKManagedObjectMapping *)relatedObjectMapping {
+    return [EKManagedObjectMapping mappingForEntityName:NSStringFromClass(self) withBlock:^(EKManagedObjectMapping *mapping) {
+        mapping.primaryKey = @"clusterId";
+        [mapping mapPropertiesFromArray:@[@"title"]];
+        [mapping mapPropertiesFromDictionary:@{
+                                               @"id" : @"clusterId"
+                                               }];
     }];
 }
 
