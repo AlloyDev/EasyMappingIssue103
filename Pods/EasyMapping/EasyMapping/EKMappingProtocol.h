@@ -6,16 +6,9 @@
 //  Copyright (c) 2014 EasyKit. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "EKObjectMapping.h"
 #import "EKManagedObjectMapping.h"
-
-#if __has_feature(nullability) // Xcode 6.3+
-#pragma clang assume_nonnull begin
-#else
-#define nullable
-#define __nullable
-#endif
 
 /**
  EKMappingProtocol must be implemented by NSObject subclasses, that will be mapped from JSON representation.
@@ -48,8 +41,3 @@
 +(EKManagedObjectMapping *)objectMapping;
 
 @end
-
-#if __has_feature(nullability)
-#pragma clang assume_nonnull end
-#endif
-

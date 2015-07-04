@@ -1,6 +1,7 @@
 ![Build Status](https://travis-ci.org/EasyMapping/EasyMapping.png?branch=master) &nbsp;
 ![CocoaPod platform](https://cocoapod-badges.herokuapp.com/p/EasyMapping/badge.png) &nbsp; 
 ![CocoaPod version](https://cocoapod-badges.herokuapp.com/v/EasyMapping/badge.png) &nbsp; 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
 # EasyMapping
@@ -9,7 +10,8 @@ An easy way to unmarshall a Dictionary of attributes (which came from JSON, XML 
 
 ##Contact:
 
-Developed by [Lucas Medeiros](https://www.twitter.com/aspmedeiros)
+Developed by [Lucas Medeiros](https://www.twitter.com/aspmedeiros) and [Denys Telezhkin](https://www.twitter.com/DTCoder)
+
 E-mail: lucastoc@gmail.com
 
 ## Usage
@@ -166,7 +168,7 @@ EasyMapping is partially compatible with Swift. [Here's detailed look](https://g
 
 ### Convenience classes
 
-Starting with 0.7.0, EasyMapping provides two convenience base classes: EKObjectModel and EKManagedObjectModel, that implement EKMappingProtocol by default. If, for example, class Person would inherit from EKObjectModel, and implemented objectMapping method, all it would take to create Person instance from JSON representation would be:
+EasyMapping provides two convenience base classes: EKObjectModel and EKManagedObjectModel, that implement EKMappingProtocol by default. If, for example, class Person would inherit from EKObjectModel, and implemented objectMapping method, all it would take to create Person instance from JSON representation would be:
 
 ```objective-c
 NSDictionary * parsedPersonInfo = ...;
@@ -199,7 +201,6 @@ Thanks to:
 
 * [basitali](https://github.com/basitali) who added the fillObject functionality on EKMapper!
 * [Alejandro](https://github.com/aleph7) who added CoreData support!
-* [DenHeadless](https://github.com/DenHeadless) who added the ability to use different naming in hasOne and hasMany mappings!
 * [Philip Vasilchenko](https://github.com/ArtFeel) who added the ability to serialization/deserialization of scalar types!
 * [Dany L'Hébreux](https://github.com/danylhebreux) who added the NSSet support!
 * [Jack](https://github.com/Jack-s) who added mapFieldsFromMappingObject and mapFieldsFromArrayToPascalCase functionality
@@ -207,15 +208,22 @@ Thanks to:
 
 ## Requirements
 
+* XCode 6.3 and higher
 * iOS 5 and higher
 * Mac OS X 10.7 and higher
 * ARC
 
 ## Installation
 
-Using CocoaPods:
+Using [CocoaPods](https://cocoapods.org):
 
-	pod 'EasyMapping', '~> 0.12.0'
+	pod 'EasyMapping', '~> 0.15.0'
+
+Using [Carthage](https://github.com/Carthage/Carthage):
+
+    github "EasyMapping/EasyMapping"
+
+Carthage uses dynamic frameworks, which require iOS 8.
 
 ## The idea
 

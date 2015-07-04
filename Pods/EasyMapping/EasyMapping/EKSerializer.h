@@ -25,13 +25,6 @@
 #import "EKSerializer.h"
 #import "EKManagedObjectMapping.h"
 
-#if __has_feature(nullability) // Xcode 6.3+
-#pragma clang assume_nonnull begin
-#else
-#define nullable
-#define __nullable
-#endif
-
 /**
  `EKSerializer` is a class, that allows converting objects to their JSON representation, using `EKObjectMapping`. CoreData objects are supported too.
  */
@@ -89,8 +82,3 @@
                      withMapping:(EKManagedObjectMapping*)mapping
                      fromContext:(NSManagedObjectContext *)context;
 @end
-
-#if __has_feature(nullability)
-#pragma clang assume_nonnull end
-#endif
-

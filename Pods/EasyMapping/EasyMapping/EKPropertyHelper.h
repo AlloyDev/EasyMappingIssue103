@@ -21,17 +21,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <CoreData/CoreData.h>
-#import <Foundation/Foundation.h>
+@import CoreData;
+@import Foundation;
 #import "EKPropertyMapping.h"
 #import "EKObjectMapping.h"
-
-#if __has_feature(nullability) // Xcode 6.3+
-#pragma clang assume_nonnull begin
-#else
-#define nullable
-#define __nullable
-#endif
 
 /**
  `EKPropertyHelper` is internal EasyMapping class, that works with objective-c runtime to get and set values of properties.
@@ -40,25 +33,27 @@
 
 + (BOOL)propertyNameIsScalar:(NSString *)propertyName fromObject:(id)object;
 
-+ (nullable id)propertyRepresentation:(NSArray *)array forObject:(id)object withPropertyName:(NSString *)propertyName;
++ (id)propertyRepresentation:(NSArray *)array forObject:(id)object withPropertyName:(NSString *)propertyName;
 
 + (void)  setProperty:(EKPropertyMapping *)propertyMapping
              onObject:(id)object
-   fromRepresentation:(NSDictionary *)representation;
+   fromRepresentation:(NSDictionary *)representation
+  respectPropertyType:(BOOL)respectPropertyType;
 
 + (void) setProperty:(EKPropertyMapping *)propertyMapping
             onObject:(id)object
   fromRepresentation:(NSDictionary *)representation
-           inContext:(NSManagedObjectContext *)context;
+           inContext:(NSManagedObjectContext *)context
+ respectPropertyType:(BOOL)respectPropertyType;
 
-+ (nullable id)getValueOfProperty:(EKPropertyMapping *)propertyMapping
-               fromRepresentation:(NSDictionary *)representation;
++ (id)getValueOfProperty:(EKPropertyMapping *)propertyMapping
+      fromRepresentation:(NSDictionary *)representation;
 
 + (id)getValueOfManagedProperty:(EKPropertyMapping *)mapping
              fromRepresentation:(NSDictionary *)representation
                       inContext:(NSManagedObjectContext *)context;
 
-+ (void)setValue:(nullable id)value onObject:(id)object forKeyPath:(NSString *)keyPath;
++ (void)setValue:(id)value onObject:(id)object forKeyPath:(NSString *)keyPath;
 
 + (void)addValue:(id)value onObject:(id)object forKeyPath:(NSString *)keyPath;
 
@@ -66,7 +61,3 @@
                                                 withMapping:(EKObjectMapping *)mapping;
 
 @end
-
-#if __has_feature(nullability)
-#pragma clang assume_nonnull end
-#endif

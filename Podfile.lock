@@ -1,15 +1,15 @@
 PODS:
-  - EasyMapping (0.13.0):
-    - EasyMapping/Core (= 0.13.0)
-  - EasyMapping/Core (0.13.0)
+  - EasyMapping (0.15.1):
+    - EasyMapping/Core (= 0.15.1)
+  - EasyMapping/Core (0.15.1)
   - MagicalRecord (2.3.0)
 
 DEPENDENCIES:
-  - EasyMapping (~> 0.13.0)
+  - EasyMapping (~> 0.15)
   - MagicalRecord (~> 2.3)
 
 SPEC CHECKSUMS:
-  EasyMapping: 457968ced83253ecfa878a3d694bdbc833608292
+  EasyMapping: b5e965fd09ace6f175f0116968bc98f810552032
   MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
 
 COCOAPODS: 0.37.2

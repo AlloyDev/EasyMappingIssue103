@@ -21,15 +21,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <CoreData/CoreData.h>
+@import CoreData;
 #import "EKManagedObjectMapping.h"
-
-#if __has_feature(nullability) // Xcode 6.3+
-#pragma clang assume_nonnull begin
-#else
-#define nullable
-#define __nullable
-#endif
 
 /**
  `EKManagedObjectMapper` is used to create and fill CoreData objects. Internally, it uses `EKCoreDataImporter` class to speed up data imports. You can find more info on this in project's readme.
@@ -106,8 +99,3 @@
                                    inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end
-
-#if __has_feature(nullability)
-#pragma clang assume_nonnull end
-#endif
-

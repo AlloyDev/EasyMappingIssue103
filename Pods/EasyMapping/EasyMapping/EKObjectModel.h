@@ -6,16 +6,8 @@
 //  Copyright (c) 2014 EasyKit. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "EKMappingProtocol.h"
-
-
-#if __has_feature(nullability) // Xcode 6.3+
-#pragma clang assume_nonnull begin
-#else
-#define nullable
-#define __nullable
-#endif
 
 /**
  EKModel is convenience base class, that allows transforming JSON objects to NSObjects and vice versa.
@@ -49,8 +41,3 @@
 - (NSDictionary *)serializedObject;
 
 @end
-
-#if __has_feature(nullability)
-#pragma clang assume_nonnull end
-#endif
-
