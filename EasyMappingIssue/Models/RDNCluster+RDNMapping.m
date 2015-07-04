@@ -18,6 +18,13 @@
                                                @"id" : @"clusterId"
                                                }];
         
+        // 1
+//        [mapping hasMany:[RDNCluster class] forKeyPath:@"related" forProperty:@"childClusters"];
+        
+        // 2
+//        [mapping hasMany:[RDNCluster class] forKeyPath:@"related" forProperty:@"childClusters" withObjectMapping:[self relatedObjectMapping]];
+
+        // 3
         [mapping mapKeyPath:@"related" toProperty:@"childClusters" withValueBlock:^id(NSString *key, NSArray * relatedArray, NSManagedObjectContext *context) {
             EKManagedObjectMapping *clusterMapping = [RDNCluster relatedObjectMapping];
             NSArray *clusters = [EKManagedObjectMapper arrayOfObjectsFromExternalRepresentation:relatedArray

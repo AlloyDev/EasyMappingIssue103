@@ -16,14 +16,13 @@
 		FD6D8CB91B432E2B001F2C69 /* EasyMappingIssueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CB81B432E2B001F2C69 /* EasyMappingIssueTests.m */; };
 		FD6D8CC51B433093001F2C69 /* RDNServerResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */; };
 		FD6D8CC61B433093001F2C69 /* RDNServerResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */; };
-		FD6D8CC81B433249001F2C69 /* badJson in Resources */ = {isa = PBXBuildFile; fileRef = FD6D8CC71B433249001F2C69 /* badJson */; };
-		FD6D8CC91B433249001F2C69 /* badJson in Resources */ = {isa = PBXBuildFile; fileRef = FD6D8CC71B433249001F2C69 /* badJson */; };
 		FD6D8CCB1B4335BE001F2C69 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */; };
 		FD6D8CCC1B4335BE001F2C69 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */; };
 		FD6D8CCF1B43367B001F2C69 /* RDNCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */; };
 		FD6D8CD01B43367B001F2C69 /* RDNCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */; };
 		FD6D8CD31B4336C9001F2C69 /* RDNCluster+RDNMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */; };
 		FD6D8CD41B4336C9001F2C69 /* RDNCluster+RDNMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */; };
+		FD749A951B47E771000A6E6C /* EasyMappingIssueTests.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD749A941B47E771000A6E6C /* EasyMappingIssueTests.bundle */; };
 		FE9C66D78FF449485A799E29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E606C12023DA2542031D08BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +55,12 @@
 		FD6D8CB81B432E2B001F2C69 /* EasyMappingIssueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyMappingIssueTests.m; sourceTree = "<group>"; };
 		FD6D8CC31B433093001F2C69 /* RDNServerResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNServerResponseMapper.h; sourceTree = "<group>"; };
 		FD6D8CC41B433093001F2C69 /* RDNServerResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDNServerResponseMapper.m; sourceTree = "<group>"; };
-		FD6D8CC71B433249001F2C69 /* badJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = badJson; sourceTree = "<group>"; };
 		FD6D8CCA1B4335BE001F2C69 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FD6D8CCD1B43367B001F2C69 /* RDNCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNCluster.h; sourceTree = "<group>"; };
 		FD6D8CCE1B43367B001F2C69 /* RDNCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDNCluster.m; sourceTree = "<group>"; };
 		FD6D8CD11B4336C9001F2C69 /* RDNCluster+RDNMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDNCluster+RDNMapping.h"; sourceTree = "<group>"; };
 		FD6D8CD21B4336C9001F2C69 /* RDNCluster+RDNMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RDNCluster+RDNMapping.m"; sourceTree = "<group>"; };
+		FD749A941B47E771000A6E6C /* EasyMappingIssueTests.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EasyMappingIssueTests.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +132,6 @@
 				FD6D8CA61B432E2B001F2C69 /* Main.storyboard */,
 				FD6D8CA91B432E2B001F2C69 /* Images.xcassets */,
 				FD6D8CAB1B432E2B001F2C69 /* LaunchScreen.xib */,
-				FD6D8CC71B433249001F2C69 /* badJson */,
 				FD6D8C9C1B432E2B001F2C69 /* Supporting Files */,
 			);
 			path = EasyMappingIssue;
@@ -152,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6D8CB81B432E2B001F2C69 /* EasyMappingIssueTests.m */,
+				FD749A941B47E771000A6E6C /* EasyMappingIssueTests.bundle */,
 				FD6D8CB61B432E2B001F2C69 /* Supporting Files */,
 			);
 			path = EasyMappingIssueTests;
@@ -231,7 +230,6 @@
 					};
 					FD6D8CB11B432E2B001F2C69 = {
 						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = FD6D8C981B432E2B001F2C69;
 					};
 				};
 			};
@@ -259,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6D8CC81B433249001F2C69 /* badJson in Resources */,
 				FD6D8CA81B432E2B001F2C69 /* Main.storyboard in Resources */,
 				FD6D8CAD1B432E2B001F2C69 /* LaunchScreen.xib in Resources */,
 				FD6D8CAA1B432E2B001F2C69 /* Images.xcassets in Resources */,
@@ -270,7 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6D8CC91B433249001F2C69 /* badJson in Resources */,
+				FD749A951B47E771000A6E6C /* EasyMappingIssueTests.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +469,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7BE61444BB67DB769D7C5B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -484,14 +480,12 @@
 				INFOPLIST_FILE = EasyMappingIssueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMappingIssue.app/EasyMappingIssue";
 			};
 			name = Debug;
 		};
 		FD6D8CC11B432E2B001F2C69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -499,7 +493,6 @@
 				INFOPLIST_FILE = EasyMappingIssueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMappingIssue.app/EasyMappingIssue";
 			};
 			name = Release;
 		};

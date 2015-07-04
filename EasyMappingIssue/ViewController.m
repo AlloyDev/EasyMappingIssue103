@@ -28,18 +28,10 @@
     NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
     RDNServerResponseMapper *clusterResponseMapper = [[RDNServerResponseMapper alloc] init];
-    NSArray *clusters = [clusterResponseMapper mapServerResponse:responseDict];
-    NSLog(@"%@", clusters);
+    [clusterResponseMapper mapServerResponse:responseDict];
     
-    NSManagedObjectContext *rootSavingContext = [NSManagedObjectContext MR_rootSavingContext];
-    
-    NSPredicate *clusterIdToFavourPredicate = [NSPredicate predicateWithFormat:@"clusterId == 30637176"];
-    [RDNCluster MR_deleteAllMatchingPredicate:clusterIdToFavourPredicate];
-    
-    [rootSavingContext MR_saveToPersistentStoreAndWait];
-    
-    clusters = [RDNCluster MR_findAll];
-    NSLog(@"%@", clusters);
+    NSArray *allClusters = [RDNCluster MR_findAllSortedBy:@"clusterId" ascending:YES];
+    NSLog(@"%@", allClusters);
 }
 
 - (void)didReceiveMemoryWarning {
